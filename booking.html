@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Booking - Palm Cove Resort</title>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-4 text-center">
+        <h1 class="text-3xl font-bold">Palm Cove Resort</h1>
+        <p class="text-lg">Book your stay with us!</p>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Room Reservation</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="room-type" class="block text-gray-700 font-semibold mb-2">Select Room Type:</label>
+                    <select id="room-type" name="room-type" class="block w-full border-gray-300 rounded-md focus:ring focus:ring-blue-500">
+                        <option value="standard">Standard Room</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="check-in" class="block text-gray-700 font-semibold mb-2">Check-In Date:</label>
+                    <input type="date" id="check-in" name="check-in" class="block w-full border-gray-300 rounded-md focus:ring focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="check-out" class="block text-gray-700 font-semibold mb-2">Check-Out Date:</label>
+                    <input type="date" id="check-out" name="check-out" class="block w-full border-gray-300 rounded-md focus:ring focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="guests" class="block text-gray-700 font-semibold mb-2">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" class="block w-full border-gray-300 rounded-md focus:ring focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="facilities" class="block text-gray-700 font-semibold mb-2">Select Facilities:</label>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="swimming-pool" name="facilities" value="Swimming Pool" class="mr-2">
+                        <label for="swimming-pool" class="text-gray-700">Swimming Pool</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="spa" name="facilities" value="Spa" class="mr-2">
+                        <label for="spa" class="text-gray-700">Spa</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="restaurant" name="facilities" value="Restaurant" class="mr-2">
+                        <label for="restaurant" class="text-gray-700">Restaurant</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="services" class="block text-gray-700 font-semibold mb-2">Select Services:</label>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="room-service" name="services" value="Room Service" class="mr-2">
+                        <label for="room-service" class="text-gray-700">Room Service</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="laundry" name="services" value="Laundry" class="mr-2">
+                        <label for="laundry" class="text-gray-700">Laundry Service</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="airport-transfer" name="services" value="Airport Transfer" class="mr-2">
+                        <label for="airport-transfer" class="text-gray-700">Airport Transfer</label>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 rounded">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+        <p>&copy; 2024 Palm Cove Resort. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
